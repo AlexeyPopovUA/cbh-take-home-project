@@ -9,3 +9,12 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
+
+Refactoring changes:
+
+* Extract constants from function for re-using them outside
+* Extract ```createHashedKey``` and ```ensureKeyFormat``` functions for a better separation of logic and utilities
+
+Notes:
+
+* The case of non-primitive type of ```event.partitionKey``` is not covered either with function or with unit tests. I prefer asking questions to making assumptions in this case.
